@@ -4,7 +4,7 @@ function showElement(e) {
     console.log(e);
     // e.cancelBubble = true;                           // prevent the bubbling up through the elements with a click on the innermost element
     // e.stopPropagation();                             // prevents bubbling and capturing
-    alert("Using 'e.target': " + e.target.innerHTML);  // event is the element that recieved the click
+    alert("Using 'e.target result =' " + e.target.innerHTML);  // event is the element that recieved the click
     // alert("Using 'this': " + this.innerHTML);          // this is the element that fired the event  
     // alert("This is only only link element node...or is it?")
   }
@@ -18,10 +18,10 @@ single_values.innerText = 'new heading';
 
 const multi_values = document.querySelectorAll('a');
 console.log(multi_values)
-multi_values.forEach(function(elem, key){
-    console.log(elem);
+multi_values.forEach(function(ele, key){
+    console.log(ele);
     console.log(key);
-    elem.innerHTML = 'element number' + (key=1)
+    ele.innerHTML = 'element number' + (key=1)
 })
 
 const first_list = document.getElementById('list');
@@ -32,8 +32,15 @@ comsole.log(first_list)
 const new_li = document.createElement('li');
 const new_a = document.createElement('a');
 
-new_a.innerText = 'I added this randomly.';
+new_a.innerText = 'I added this randomly by myself.';
 
 new_li.append(new_a);
 first_list.append(new_li);
 
+function writeSomething(e) {
+  console.log(e);
+  alert("This is on the parent item element node. SOMETHING")
+}
+function grandparent(e) {
+  alert("This is on the grandparent list element node.BLOCK 2")
+}

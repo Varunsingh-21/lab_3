@@ -2,9 +2,9 @@
 <html>
   <head>
     <title>JavaScript &amp; jQuery - Chapter 6: Events - Event listener with parameters</title>
-    <link rel="stylesheet" href="css/c06.css" />
+    <!-- <link rel="stylesheet" href="css/c06.css" /> -->
   </head>
-  <body>
+  <body >
     <div id="page">
       <h1>List King</h1>
       <h2>New Account</h2>
@@ -14,12 +14,12 @@
         <input type="text" id="username" /><div id="feedback"></div>
 
         <label for="password">Create a password: </label>
-        <input type="password" id="password" />
+        <input onclick="checkUsername(8)" type="password" id="password" />
 
         <input type="submit" value="sign up" />
 
       </form>
     <div>
-    <script src="js/event-listener-with-parameters.js"></script>
+    <script src="scripts/event-listener-with-parameters.js"></script>
   </body>
 </html>

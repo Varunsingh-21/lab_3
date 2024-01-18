@@ -1,13 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald);
 
+
+
+#usrname{
+  margin: auto;
+}
 body {
-  background-color: #000;
+  background-color: #7b0fb0;
   font-family: 'Oswald', 'Futura', sans-serif;
   margin: 0; 
   padding: 0;}
 
 #page {
-  background-color: #403c3b;
+  background-color: #1806a0;
   margin: 0 auto 0 auto;}
   /* Responsive page rules at bottom of style sheet */
 

@@ -11,6 +11,6 @@ function checkUsername(minLength) {                     // Declare function
 }
 
 elUsername.addEventListener('blur', function(e) {        // When it loses focus
-  checkUsername(5);
+  checkUsername(8);
   console.log(e);                                    // Pass argument here
 }, false);

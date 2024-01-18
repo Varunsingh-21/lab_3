@@ -15,6 +15,6 @@ let elUsername = document.getElementById('username');// Get username input
 if (elUsername.addEventListener) {           // If event listener supported
   elUsername.addEventListener('blur', function(e) {  // On blur event
     // NOTE: This function is checkLength() - not checkUsername()
-    checkLength(e, 5);                             // Call checkLength()
+    checkLength(e, 8);                             // Call checkLength()
   }, false);                                       // Capture in bubble phase
 } 

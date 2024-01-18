@@ -21,13 +21,14 @@ function showElement(e) {
   // alert("This is only only link element node...or is it?")
 }
 
-// function writeSomething(e) {
-//   alert("This is on the parent item element node.")
-// }
+function writeSomething(e) {
+  console.log(e);
+  alert("This is on the parent item element node. SOMETHING")
+}
 
-// function grandparent(e) {
-//   alert("This is on the grandparent list element node.")
-// }
+function grandparent(e) {
+  alert("This is on the grandparent list element node.")
+}
 //#endregion
 
 //#region EVENT BUBBLING 
