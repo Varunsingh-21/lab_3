@@ -1,0 +1,14 @@
+[
+    {
+        "name": "PS5" ,
+        "price" : "$619.99"
+    },
+    {
+        "name": "Controller " ,
+        "price" : "$69.99"
+    },
+    {
+        "name": "Games" ,
+        "price" : "$200"
+    }
+]
