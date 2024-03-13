@@ -1,6 +1,7 @@
 document.getElementById("getXhr").addEventListener
     ('click', e => {
-        getAjax("./products.json");
+        // getAjax("./products.json");
+        getFetch("./products.json")
     });
 
     function getXhr(resource_url) {
@@ -19,6 +20,35 @@ document.getElementById("getXhr").addEventListener
         request.open('GET', resource_url);
         request.send(); 
     }
+
+
+
+
+
+async function getFetch(resource_url){
+    try{
+        const headers=new Headers({
+            "Content-Type":"application/json"
+        });
+        const request = new Request(resource_url,{
+            method: "GET",
+            headers:headers
+        });
+        const result=await fetch(request);
+        console.log(result);
+        if(result.ok){
+            handleSuccess(await result.json());
+        }
+        else{
+            handleError(await result.json());
+        }
+    }
+    catch(ex){
+        console.log(ex);
+    }
+}
+
+
 function handleSuccess(res) {
     const reference = res
     const tableref = document.getElementById('xhr-table');
