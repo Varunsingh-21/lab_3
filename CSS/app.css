@@ -1,0 +1,49 @@
+body{
+    background-image: url("../img/img1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.register {
+margin: auto;
+    width: 500px;
+}
+.inputs2{
+    text-align: right;
+    display: flex;
+    gap: 5px;
+}
+#form-registration{
+    text-align: right;
+}
+
+.input2 {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+.submitbtn {
+    width: 40%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+label{
+    color: #f4eeee;
+}
+
+h1{
+    color: white;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, auto); 
+    grid-gap: 20px;
+    padding: 20px; 
+}

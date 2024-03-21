@@ -1,40 +1,69 @@
+<!-- Name: Varun Deep Singh -->
+<!-- Student Number:100865156 -->
+<!-- Description: The Homepage for the project -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
-    <!-- Include Bootstrap CSS from CDN -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Your custom CSS here -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/app.css">
+    <title>DemoWebpage-INFT2202</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#">Varun Singh</a>
-        <div>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link navbar-text" href="#">Contact Us</a>
-                </li>
-                <!-- The username will be inserted here using jQuery -->
-                <li class="nav-item">
-                    <a class="nav-link navbar-text" href="#">Logout</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="./index.html">LAB-INFT2202</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto" id="navlist">
+            <li id="home" class="nav-item">
+                <a class="nav-link" href="index.html">
+                    Home
+                </a>
+            </li>
+            <li id="products" class="nav-item">
+                <a class="nav-link" href="products.html">
+                    Products
+                </a>
+            <li>
+            <li id="services" class="nav-item">
+                <a class="nav-link" href="services.html"> 
+                    Services
+                </a>
+            </li>
+            <li id="about" class="nav-item">
+                <a class="nav-link" href="about.html">
+                    About Us
+                </a>
+            </li>
+            <li id="contact" class="nav-item">
+                <a class="nav-link" href="contact.html">
+                 Contact Us</a>
+            </li>
+            <li id="blog" class="nav-item">
+                <a class="nav-link" href="blog.html">
+                    Blog
+                </a>
+            </li>
+            <li id="login" class="nav-item">
+                <a class="nav-link" href="login.html">
+                    Login
+                </a>
+            </li>
+          </ul>
+          </div>
+      </nav>
 
     <h1>Our Services</h1>
-    <!-- Content for services goes here -->
 
-    <script src="app.js"></script> <!-- Your custom JavaScript file -->
+    <script src="app.js"></script> 
 </body>
 </html>
